@@ -138,16 +138,20 @@ public class Mymath {
             return "bad param";
         Stack<String> num=new Stack<>();
         Stack<Character> op=new Stack<>();
-
+        int start=1;
         if(c[0]=='-'){
             num.push("0");
             op.push('-');
         }else if(c[0]-'0'>=0&&c[0]-'0'<=9){
             num.push(Character.toString(c[0]));
+        }else if(c[0]=='('){
+            String str=calcK(c);
+            num.push(calc(str));
+            start+=str.length()+1;
         }else{
             return "bad param";
         }
-        for(int i=1;i<c.length;i++){
+        for(int i=start;i<c.length;i++){
             //当前符号为运算符
             if(num.size()>op.size()){
                 //优先级小于等于op栈顶，则弹出计算
