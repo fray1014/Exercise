@@ -164,7 +164,14 @@ public class Mymath {
                     op.push(c[i]);
                 }
             }else{
-                num.push(Character.toString(c[i]));
+                //判断括号
+                if(c[i]=='('){
+                    char[] k=Arrays.copyOfRange(c,i,c.length);
+                    String str=calcK(k);
+                    i+=str.length()+1;
+                    num.push(calc(str));
+                }else
+                    num.push(Character.toString(c[i]));
             }
         }
         if(num.size()<=op.size())
@@ -207,5 +214,24 @@ public class Mymath {
                 return 0;
 
         }
+    }
+
+    //kuohaoti
+    public static String calcK(char[] cin){
+        int lcnt=0;
+        int rcnt=0;
+        int end=0;
+        for(int i=0;i<cin.length;i++){
+            if(cin[i]=='(')
+                lcnt++;
+            else if(cin[i]==')')
+                rcnt++;
+            if(lcnt==rcnt){
+                end=i;
+                break;
+            }
+        }
+        char[] cout=Arrays.copyOfRange(cin,1,end);
+        return String.valueOf(cout);
     }
 }
