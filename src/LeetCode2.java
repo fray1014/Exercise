@@ -2,6 +2,19 @@ import org.junit.Test;
 import java.util.*;
 
 public class LeetCode2 {
+    public static void main(String[] args){
+        Thread t = new Thread() {
+            public void run() {
+                print();
+            }
+        };
+        t.run();
+        System.out.print("MT");
+    }
+    static void print() {
+        System.out.print("DP");
+
+    }
     /**深拷贝复杂链表*/
     public class RandomListNode {
         int label;
@@ -371,9 +384,204 @@ public class LeetCode2 {
 
     /**输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，
      * 所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。*/
-    public class SolutionJZ13{
+    public class SolutionJZ13 {
         public void reOrderArray(int [] array) {
+            if(array.length==0||array==null){
+                return;
+            }
+            int m=0;
+            for(int i=0;i<array.length;i++){
+                if(array[i]%2==1){
+                    int j=i;
+                    int tmp=array[i];
+                    while(j>m){
+                        array[j]=array[j-1];
+                        j--;
+                    }
+                    m=j+1;
+                    array[j]=tmp;
+                }
+            }
+        }
+    }
 
+    /**算乘方，快速幂*/
+    public class SolutionJZ12 {
+        public double Power(double base, int exponent) {
+            if(exponent<0){
+                base=1/base;
+                exponent=-exponent;
+            }
+            return helpPow(base,exponent);
+        }
+        public double helpPow(double base,int exponent){
+            double tmp=1;
+            if(exponent==0)
+                return 1;
+            if(exponent%2==1){
+                exponent--;
+                tmp=base;
+            }
+            while(exponent>1){
+                base*=base;
+                exponent/=2;
+            }
+            return base*tmp;
+        }
+    }
+
+    /**统计二进制1的位数*/
+    public class SolutionJZ11 {
+        public int NumberOf1(int n) {
+            int cnt=0;
+            while(n!=0){
+                cnt++;
+                n=n&(n-1);
+            }
+            return cnt;
+        }
+    }
+
+    /**矩形覆盖*/
+    public class SolutionJZ10{
+        //斐波那契数列
+        public int RectCover(int target) {
+            if(target<=0)
+                return 0;
+            if(target==1)
+                return 1;
+            if(target==2)
+                return 2;
+            return RectCover(target-1)+RectCover(target-2);
+        }
+    }
+
+    /**一只青蛙一次可以跳上1级台阶，也可以跳上2级。
+     * 求该青蛙跳上一个n级的台阶总共有多少种跳法*/
+    public class SolutionJZ8 {
+        public int JumpFloor(int target) {
+            //斐波那契最优解，时间复杂度O(n)，空间复杂度O(1)
+            if(target<=1)
+                return 1;
+            if(target==2)
+                return 2;
+            int target_1=1;
+            int target_2=1;
+            int ret=0;
+            for(int i=2;i<=target;i++){
+                ret=target_1+target_2;
+                target_2=target_1;
+                target_1=ret;
+            }
+            return ret;
+        }
+    }
+
+    /**把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。
+     输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。*/
+    public class SolutionJZ6 {
+        public int minNumberInRotateArray(int [] array) {
+            if(array.length==0||array==null)
+                return 0;
+            int low=0;
+            int high=array.length-1;
+            int mid;
+            while(low<high){
+                if(array[low]<array[high])
+                    return array[low];
+                mid=low+((high-low)>>1);
+                if(array[mid]>array[high]){
+                    low=mid+1;
+                }else if(array[mid]<array[high]){
+                    high=mid;
+                }else{
+                    high--;
+                }
+
+            }
+            return array[low];
+        }
+    }
+
+    /**输入前序遍历和中序遍历，还原二叉树*/
+    public class SolutionJZ4 {
+        public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
+            if(pre.length==0||in.length==0)
+                return null;
+            TreeNode root=new TreeNode(pre[0]);
+            for(int i=0;i<in.length;i++){
+                if(in[i]==root.val){
+                    root.left=reConstructBinaryTree(Arrays.copyOfRange(pre,1,i+1),
+                            Arrays.copyOfRange(in,0,i));
+                    root.right=reConstructBinaryTree(Arrays.copyOfRange(pre,i+1,pre.length),
+                            Arrays.copyOfRange(in,i+1,in.length));
+                }
+            }
+            return root;
+        }
+    }
+
+    /**输入一个链表，按链表从尾到头的顺序返回一个ArrayList。*/
+    public class SolutionJZ3{
+        ArrayList<Integer> list = new ArrayList();
+        public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+            if(listNode!=null){
+                printListFromTailToHead(listNode.next);
+                list.add(listNode.val);
+            }
+            return list;
+        }
+        /*
+        public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+            ArrayList<Integer> list = new ArrayList<>();
+            ListNode tmp = listNode;
+            while(tmp!=null){
+                list.add(0,tmp.val);
+                tmp = tmp.next;
+            }
+            return list;
+        }*/
+    }
+    /**请实现一个函数，将一个字符串中的每个空格替换成“%20”。*/
+    public class SolutionJZ2{
+        /*
+        public String replaceSpace(StringBuffer str) {
+            return str.toString().replace(" ","%20");
+        }*/
+        public String replaceSpace(StringBuffer str){
+            StringBuffer ret=new StringBuffer();
+            for(int i=0;i<str.length();i++){
+                char c=str.charAt(i);
+                if(c==' ')
+                    ret.append("%20");
+                else
+                    ret.append(c);
+
+            }
+            return ret.toString();
+        }
+    }
+    /**在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，
+     * 每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，
+     * 判断数组中是否含有该整数。*/
+    public class SolutionJZ1{
+        public boolean Find(int target, int [][] array) {
+            int rows=array.length;
+            int cols=array[0].length;
+            if(rows==0||cols==0)
+                return false;
+            int row=0;
+            int col=cols-1;
+            while(row<rows&&col>=0){
+                if(target==array[row][col])
+                    return true;
+                else if(target>array[row][col]){
+                    row++;
+                }else{
+                    col--;
+                }
+            }
+            return false;
         }
     }
 }
