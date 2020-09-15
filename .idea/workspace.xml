@@ -20,9 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11862a51-1778-4495-9c25-5e56407ab7d0" name="Default Changelist" comment="括号运算from labdesktop">
+      <change afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LeetCode3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mymath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mymath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RetStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestStatic.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +60,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nowcoder" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.Mymath">
-    <configuration name="LeetCode2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LeetCode2" />
-      <module name="exercise" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Sort.test">
     <configuration name="Mymath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mymath" />
       <module name="exercise" />
@@ -73,14 +75,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Bag.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Bag" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTree.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BinaryTree" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RetStr.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RetStr" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sort.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Sort" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Sort.test" />
+        <item itemvalue="JUnit.Bag.test" />
+        <item itemvalue="JUnit.BinaryTree.test" />
+        <item itemvalue="JUnit.RetStr.test" />
         <item itemvalue="Application.Mymath" />
-        <item itemvalue="Application.LeetCode2" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -99,6 +144,21 @@
       <workItem from="1596979552941" duration="49000" />
       <workItem from="1597039220218" duration="1578000" />
       <workItem from="1597062339874" duration="5920000" />
+      <workItem from="1597210098720" duration="7512000" />
+      <workItem from="1597303027909" duration="612000" />
+      <workItem from="1597901800699" duration="2739000" />
+      <workItem from="1598514372558" duration="2375000" />
+      <workItem from="1598541745880" duration="2341000" />
+      <workItem from="1598853399185" duration="5735000" />
+      <workItem from="1599223045768" duration="2224000" />
+      <workItem from="1599371092797" duration="4074000" />
+      <workItem from="1599485024906" duration="144000" />
+      <workItem from="1599489449033" duration="1517000" />
+      <workItem from="1599574377566" duration="663000" />
+      <workItem from="1599666093770" duration="48000" />
+      <workItem from="1599921249646" duration="744000" />
+      <workItem from="1600005385199" duration="4059000" />
+      <workItem from="1600097758905" duration="216000" />
     </task>
     <task id="LOCAL-00001" summary="括号运算from labdesktop">
       <created>1597135620729</created>
@@ -134,64 +194,68 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596786988710" />
-    <state x="678" y="318" key="FileChooserDialogImpl" timestamp="1597143945468">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600005573820">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596979600009" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600005573820" />
+    <state x="634" y="260" key="FileChooserDialogImpl" timestamp="1600010667667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="634" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600010667667" />
     <state x="678" y="318" key="FileChooserDialogImpl/65.24.1855.1176@65.24.1855.1176" timestamp="1597143945468" />
-    <state width="1809" height="336" key="GridCell.Tab.0.bottom" timestamp="1597147430576">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263810" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="336" key="GridCell.Tab.0.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1809" height="336" key="GridCell.Tab.0.center" timestamp="1597147430576">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263809" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="336" key="GridCell.Tab.0.center/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1809" height="336" key="GridCell.Tab.0.left" timestamp="1597147430576">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263809" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="336" key="GridCell.Tab.0.left/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1809" height="336" key="GridCell.Tab.0.right" timestamp="1597147430576">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263809" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="336" key="GridCell.Tab.0.right/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1809" height="413" key="GridCell.Tab.1.bottom" timestamp="1597143041164">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263810" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="413" key="GridCell.Tab.1.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1809" height="413" key="GridCell.Tab.1.center" timestamp="1597143041164">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263810" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="413" key="GridCell.Tab.1.center/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1809" height="413" key="GridCell.Tab.1.left" timestamp="1597143041164">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263810" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="413" key="GridCell.Tab.1.left/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1809" height="413" key="GridCell.Tab.1.right" timestamp="1597143041164">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599379755948">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597068263810" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
     <state width="1809" height="413" key="GridCell.Tab.1.right/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state x="490" y="130" key="SettingsEditor" timestamp="1597119774668">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1600010671771">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596355791204" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600010671771" />
     <state x="490" y="130" key="SettingsEditor/65.24.1855.1176@65.24.1855.1176" timestamp="1597119774668" />
     <state x="592" y="335" key="Vcs.Push.Dialog.v2" timestamp="1597135720098">
       <screen x="65" y="24" width="1855" height="1176" />
     </state>
     <state x="592" y="335" key="Vcs.Push.Dialog.v2/65.24.1855.1176@65.24.1855.1176" timestamp="1597135720098" />
-    <state x="388" y="128" width="1372" height="794" key="new project wizard" timestamp="1597143960579">
-      <screen x="65" y="24" width="1855" height="1176" />
+    <state x="334" y="92" width="1372" height="794" key="new project wizard" timestamp="1598864229676">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596715182705" />
+    <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1598864229676" />
     <state x="388" y="128" width="1372" height="794" key="new project wizard/65.24.1855.1176@65.24.1855.1176" timestamp="1597143960579" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1596785085076">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -203,7 +267,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Mymath.java</url>
-          <line>195</line>
+          <line>206</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
