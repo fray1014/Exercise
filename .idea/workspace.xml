@@ -20,18 +20,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11862a51-1778-4495-9c25-5e56407ab7d0" name="Default Changelist" comment="括号运算from labdesktop">
-      <change afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/KMP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LeetCode4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/Bag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/BigData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/BigData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/BinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$RandomListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$RandomListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$Solution0730A.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$Solution0730A.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$SolutionJZ8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2$TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2$TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/LeetCode2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/LeetCode2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/Mymath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/Mymath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/RetStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/RetStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/SortTemp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/SortTemp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/Temp$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/Temp$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/Temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/Temp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/util/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/util/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/exercise/util/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/exercise/util/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinaryTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LeetCode3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RetStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RetStr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestStatic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KMP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/ListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +81,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Softwares\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Softwares/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Softwares\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1fXDpb6sa7BouL6SVAcOItbAg6i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -60,21 +102,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nowcoder" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.Sort.test">
-    <configuration name="Mymath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Mymath" />
-      <module name="exercise" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.KMP.test">
     <configuration name="Bag.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,20 +120,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTree.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryTree.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BinaryTree" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KMP.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KMP" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RetStr.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeetCode4.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exercise" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RetStr" />
+      <option name="MAIN_CLASS_NAME" value="LeetCode4" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -117,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KMP.test" />
+        <item itemvalue="JUnit.LeetCode4.test" />
+        <item itemvalue="JUnit.BinaryTree.test2" />
         <item itemvalue="JUnit.Sort.test" />
         <item itemvalue="JUnit.Bag.test" />
-        <item itemvalue="JUnit.BinaryTree.test" />
-        <item itemvalue="JUnit.RetStr.test" />
-        <item itemvalue="Application.Mymath" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +204,32 @@
       <workItem from="1599921249646" duration="744000" />
       <workItem from="1600005385199" duration="4059000" />
       <workItem from="1600097758905" duration="216000" />
+      <workItem from="1600140456154" duration="21000" />
+      <workItem from="1600181637843" duration="72000" />
+      <workItem from="1600266488703" duration="3356000" />
+      <workItem from="1600529266893" duration="699000" />
+      <workItem from="1600778881217" duration="1367000" />
+      <workItem from="1600871074574" duration="1053000" />
+      <workItem from="1600964617955" duration="351000" />
+      <workItem from="1601045023793" duration="8000" />
+      <workItem from="1601045679022" duration="619000" />
+      <workItem from="1601291915469" duration="3593000" />
+      <workItem from="1601379594177" duration="38000" />
+      <workItem from="1601908362278" duration="1525000" />
+      <workItem from="1601912861085" duration="630000" />
+      <workItem from="1601916020662" duration="88000" />
+      <workItem from="1601916118889" duration="97000" />
+      <workItem from="1601916380122" duration="181000" />
+      <workItem from="1601916569104" duration="5000" />
+      <workItem from="1601916829218" duration="108000" />
+      <workItem from="1602343221976" duration="336000" />
+      <workItem from="1602423231874" duration="14000" />
+      <workItem from="1602680159711" duration="2637000" />
+      <workItem from="1603289557027" duration="116000" />
+      <workItem from="1603380887067" duration="89000" />
+      <workItem from="1603552993573" duration="1539000" />
+      <workItem from="1603626237712" duration="674000" />
+      <workItem from="1603806907677" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="括号运算from labdesktop">
       <created>1597135620729</created>
@@ -198,64 +269,64 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600005573820" />
-    <state x="634" y="260" key="FileChooserDialogImpl" timestamp="1600010667667">
+    <state x="345" y="308" key="FileChooserDialogImpl" timestamp="1603627228293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="634" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600010667667" />
+    <state x="345" y="308" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603627228293" />
     <state x="678" y="318" key="FileChooserDialogImpl/65.24.1855.1176@65.24.1855.1176" timestamp="1597143945468" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="336" key="GridCell.Tab.0.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="336" key="GridCell.Tab.0.center/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="336" key="GridCell.Tab.0.left/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="336" key="GridCell.Tab.0.right/65.24.1855.1176@65.24.1855.1176" timestamp="1597147430576" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="413" key="GridCell.Tab.1.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="413" key="GridCell.Tab.1.center/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="413" key="GridCell.Tab.1.left/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599379755948">
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1603810177428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599379755948" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603810177428" />
     <state width="1809" height="413" key="GridCell.Tab.1.right/65.24.1855.1176@65.24.1855.1176" timestamp="1597143041164" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1600010671771">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1601916836927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600010671771" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601916836927" />
     <state x="490" y="130" key="SettingsEditor/65.24.1855.1176@65.24.1855.1176" timestamp="1597119774668" />
     <state x="592" y="335" key="Vcs.Push.Dialog.v2" timestamp="1597135720098">
       <screen x="65" y="24" width="1855" height="1176" />
     </state>
     <state x="592" y="335" key="Vcs.Push.Dialog.v2/65.24.1855.1176@65.24.1855.1176" timestamp="1597135720098" />
-    <state x="334" y="92" width="1372" height="794" key="new project wizard" timestamp="1598864229676">
+    <state x="334" y="92" width="1372" height="794" key="new project wizard" timestamp="1603627271649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1598864229676" />
+    <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1603627271649" />
     <state x="388" y="128" width="1372" height="794" key="new project wizard/65.24.1855.1176@65.24.1855.1176" timestamp="1597143960579" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1596785085076">
       <screen x="0" y="0" width="1920" height="1040" />

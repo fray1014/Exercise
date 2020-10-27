@@ -105,4 +105,68 @@ public class BinaryTree {
                 queue.offer(cur.right);
         }
     }
+    /**给中序后序，还原二叉树*/
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        if(inorder.length==0||postorder.length==0)
+            return null;
+        int rootidx=postorder.length-1;
+        TreeNode root=new TreeNode(postorder[rootidx]);
+        for(int i=0;i<inorder.length;i++){
+            if(inorder[i]==postorder[rootidx]){
+                int[] ileft= Arrays.copyOfRange(inorder,0,i);
+                int[] iright=Arrays.copyOfRange(inorder,i+1,inorder.length);
+                int[] pleft=Arrays.copyOfRange(postorder,0,i);
+                int[] pright=Arrays.copyOfRange(postorder,i,inorder.length-1);
+                root.left=buildTree(ileft,pleft);
+                root.right=buildTree(iright,pright);
+            }
+        }
+        return root;
+    }
+    /**给前序中序，还原二叉树*/
+    public TreeNode buildTree2(int[] preorder,int[] inorder){
+        if(preorder.length==0||inorder.length==0)
+            return null;
+        TreeNode root=new TreeNode(preorder[0]);
+        for(int i=0;i<inorder.length;i++){
+            if(inorder[i]==preorder[0]){
+                int[] ileft= Arrays.copyOfRange(inorder,0,i);
+                int[] iright=Arrays.copyOfRange(inorder,i+1,inorder.length);
+                int[] pleft=Arrays.copyOfRange(preorder,1,i+1);
+                int[] pright=Arrays.copyOfRange(preorder,i+1,preorder.length);
+                root.left=buildTree2(pleft,ileft);
+                root.right=buildTree2(pright,iright);
+            }
+        }
+        return root;
+    }
+    /**给前序后序，还原二叉树*/
+    public TreeNode buildTree3(int[] preorder,int[] postorder){
+        if(preorder.length==0||postorder.length==0)
+            return null;
+        TreeNode root=new TreeNode(preorder[0]);
+        if(preorder.length>1){
+            for(int i=0;i<postorder.length;i++){
+                if(postorder[i]==preorder[1]){
+                    int[] preleft=Arrays.copyOfRange(preorder,1,i+2);
+                    int[] preright=Arrays.copyOfRange(preorder,i+2,preorder.length);
+                    int[] postleft=Arrays.copyOfRange(postorder,0,i+1);
+                    int[] postright=Arrays.copyOfRange(postorder,i+1,postorder.length-1);
+                    root.left=buildTree3(preleft,postleft);
+                    root.right=buildTree3(preright,postright);
+                }
+            }
+        }
+        return root;
+    }
+    @Test
+    public void test2(){
+        int[] pre={1,2,4,7,5,3,6};
+        int[] in={7,4,2,5,1,3,6};
+        int[] post={7,4,5,2,6,3,1};
+        int[] t0={1,2};
+        int[] t1={2,1};
+        TreeNode tmp=buildTree3(t0,t1);
+        System.out.print(tmp.val);
+    }
 }

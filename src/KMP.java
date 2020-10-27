@@ -1,6 +1,7 @@
-package util;
+import org.junit.Test;
 
 public class KMP{
+    //最长公共前缀后缀，ABCDA的前缀为[A, AB, ABC, ABCD]，后缀为[BCDA, CDA, DA, A]，共有元素为"A"，长度为1
     public int[] prefixTable(String pattern,int n){
         int[] prefix=new int[n];
         prefix[0]=0;
@@ -53,6 +54,10 @@ public class KMP{
             }
         }
         return cnt;
+    }
+    @Test
+    public void test(){
+        kmpSearch("ABCDABD","ABCDABD");
     }
 }
 

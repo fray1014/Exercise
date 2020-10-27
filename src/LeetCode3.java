@@ -939,5 +939,82 @@ public class LeetCode3 {
             dfs(grid,x,y-1);
         }
     }
+    /**扫雷*/
+    class Solution529 {
+        public char[][] updateBoard(char[][] board, int[] click) {
+            int x=click[0],y=click[1];
+            int row=board.length;
+            int col=board[0].length;
+            dfs(board,x,y,row,col);
+            return board;
+        }
+        //true就是游戏结束
+        public void dfs(char[][] board,int x,int y,int row,int col){
+            if(x<0||x>=row||y<0||y>=col)
+                return;
+            if(board[x][y]=='B')
+                return;
+            if(board[x][y]=='E'){
+                int num=searchBomb(board,x,y,row,col);
+                if(num>0){
+                    board[x][y]=(char)('0'+num);
+                    return;
+                }else{
+                    board[x][y]='B';
+                    dfs(board,x-1,y,row,col);
+                    dfs(board,x+1,y,row,col);
+                    dfs(board,x,y-1,row,col);
+                    dfs(board,x,y+1,row,col);
+                    dfs(board,x-1,y-1,row,col);
+                    dfs(board,x-1,y+1,row,col);
+                    dfs(board,x+1,y-1,row,col);
+                    dfs(board,x+1,y+1,row,col);
+                }
+            }
+            if(board[x][y]=='M'){
+                board[x][y]='X';
+                return;
+            }
+        }
+        public int searchBomb(char[][] board,int x,int y,int row,int col){
+            int num=0;
+            if(inArea(x-1,y,row,col)){
+                if(board[x-1][y]=='M')
+                    num++;
+            }
+            if(inArea(x+1,y,row,col)){
+                if(board[x+1][y]=='M')
+                    num++;
+            }
+            if(inArea(x,y-1,row,col)){
+                if(board[x][y-1]=='M')
+                    num++;
+            }
+            if(inArea(x,y+1,row,col)){
+                if(board[x][y+1]=='M')
+                    num++;
+            }
+            if(inArea(x-1,y-1,row,col)){
+                if(board[x-1][y-1]=='M')
+                    num++;
+            }
+            if(inArea(x+1,y-1,row,col)){
+                if(board[x+1][y-1]=='M')
+                    num++;
+            }
+            if(inArea(x-1,y+1,row,col)){
+                if(board[x-1][y+1]=='M')
+                    num++;
+            }
+            if(inArea(x+1,y+1,row,col)){
+                if(board[x+1][y+1]=='M')
+                    num++;
+            }
+            return num;
+        }
+        public boolean inArea(int x,int y,int row,int col){
+            return x>=0&&x<row&&y>=0&&y<col;
+        }
+    }
 
 }
