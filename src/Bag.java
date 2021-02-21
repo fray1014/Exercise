@@ -16,8 +16,8 @@ public class Bag {
     @Test
     public void test(){
         int V=8;
-        int[] weight={3,5,1,2,2};
-        int[] value={4,5,2,1,3};
+        int[] weight={3,5,1,2,2,4,1};
+        int[] value={4,5,2,1,3,4,3};
         System.out.println(knapSack(weight,value,V));
     }
 }
