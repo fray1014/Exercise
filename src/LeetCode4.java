@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.stream.Collectors;
 
 import org.junit.Test;
 import util.*;
@@ -621,10 +622,162 @@ public class LeetCode4 {
         }
     }
 
+    class Solution1438{
+        public int longestSubarray(int[] nums, int limit) {
+            //递增
+            Deque<Integer> dqMin=new LinkedList<>();
+            //递减
+            Deque<Integer> dqMax=new LinkedList<>();
+            int left=0,right=0,ret=0;
+            while(right<nums.length){
+                while(!dqMax.isEmpty()&&nums[right]>dqMax.peekLast()){
+                    dqMax.pollLast();
+                }
+                while(!dqMin.isEmpty()&&nums[right]<dqMin.peekLast()){
+                    dqMin.pollLast();
+                }
+                dqMax.offerLast(nums[right]);
+                dqMin.offerLast(nums[right]);
+                while(!dqMax.isEmpty()&&!dqMin.isEmpty()&&dqMax.peekFirst()-dqMin.peekFirst()>limit){
+                    if(nums[left]==dqMax.peekFirst()){
+                        dqMax.pollFirst();
+                    }
+                    if(nums[left]==dqMin.peekFirst()){
+                        dqMin.pollFirst();
+                    }
+                    left++;
+                }
+                ret=Math.max(ret,right-left+1);
+                right++;
+            }
+            return ret;
+        }
+    }
+
+    class Solution766{
+        public boolean isToeplitzMatrix(int[][] matrix) {
+            if(matrix==null||matrix.length<=0){
+                return false;
+            }
+            int row = matrix.length;
+            int col = matrix[0].length;
+            int x = row - 2;
+            int y = 0;
+            while(x>=0){
+                int oldx = x;
+                while(y<col-1&&x<row-1){
+                    if(matrix[x][y]!=matrix[++x][++y]){
+                        return false;
+                    }
+                }
+                x = oldx - 1;
+                y = 0;
+            }
+            x = 0;
+            while(y<col-1){
+                int oldy = y;
+                while(y<col-1&&x<row-1){
+                    if(matrix[x][y]!=matrix[++x][++y]){
+                        return false;
+                    }
+                }
+                y = oldy + 1;
+                x = 0;
+            }
+            return true;
+        }
+    }
+
+    class Solution1052 {
+        public int maxSatisfied(int[] customers, int[] grumpy, int X) {
+            /*
+            int left = 0;
+            int right = X-1;
+            int res = 0;
+            int maxC = 0;
+            int curC = 0;
+
+            for(int i=0;i<X;i++){
+                if(i==customers.length){
+                    break;
+                }
+                if(grumpy[i]==1){
+                    maxC+=customers[i];
+                }else{
+                    res+=customers[i];
+                }
+            }
+            right++;
+            curC = maxC;
+            while(right<customers.length){
+                if(grumpy[right]==1){
+                    curC+=customers[right];
+                }else{
+                    res+=customers[right];
+                }
+                if(grumpy[left]==1){
+                    curC-=customers[left];
+                }
+                left++;
+                right++;
+                maxC=Math.max(maxC,curC);
+            }
+            return res+maxC;*/
+            int total = 0;
+            int n = customers.length;
+            for (int i = 0; i < n; i++) {
+                if (grumpy[i] == 0) {
+                    total += customers[i];
+                }
+            }
+            int increase = 0;
+            for (int i = 0; i < X; i++) {
+                increase += customers[i] * grumpy[i];
+            }
+            int maxIncrease = increase;
+            for (int i = X; i < n; i++) {
+                increase = increase - customers[i - X] * grumpy[i - X] + customers[i] * grumpy[i];
+                maxIncrease = Math.max(maxIncrease, increase);
+            }
+            return total + maxIncrease;
+        }
+    }
+
+    class Solution832 {
+        public int[][] flipAndInvertImage(int[][] A) {
+            int row = A.length;
+            int col = A[0].length;
+            if(row == 0 || col == 0){
+                return A;
+            }
+            int[][] res=new int[row][col];
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    res[i][j] = 1-A[i][col-j-1];
+                }
+            }
+            return res;
+        }
+    }
+
+    class Solution867 {
+        public int[][] transpose(int[][] matrix) {
+            int row = matrix.length;
+            int col = matrix[0].length;
+            int[][] res = new int[col][row];
+            for(int i=0;i<col;i++){
+                for(int j=0;j<row;j++){
+                    res[i][j]=matrix[j][i];
+                }
+            }
+            return res;
+        }
+    }
     @Test
     public void test(){
-        Solution1002 s=new Solution1002();
-        String[] str={"bella","label","roller"};
-        System.out.println(s.commonChars(str));
+        int[] c = {1,0,1,2,1,1,7,5};
+        int[] g = {0,1,0,1,0,1,0,1};
+        Solution1052 s = new Solution1052();
+        System.out.println(s.maxSatisfied(c,g,3));
     }
 }
