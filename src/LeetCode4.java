@@ -773,11 +773,33 @@ public class LeetCode4 {
             return res;
         }
     }
+
+    class Solution395 {
+        public int longestSubstring(String s, int k) {
+            if(s.length()<k){
+                return 0;
+            }
+            HashMap<Character,Integer> hm = new HashMap<>();
+            for(char c:s.toCharArray()){
+                hm.put(c,hm.getOrDefault(c,0)+1);
+            }
+            for(char c:hm.keySet()){
+                if(hm.get(c)<k){
+                    int res = 0;
+                    for(String str:s.split(String.valueOf(c))){
+                        res = Math.max(longestSubstring(str,k),res);
+                    }
+                    return res;
+                }
+            }
+            return s.length();
+        }
+    }
     @Test
     public void test(){
-        int[] c = {1,0,1,2,1,1,7,5};
-        int[] g = {0,1,0,1,0,1,0,1};
-        Solution1052 s = new Solution1052();
-        System.out.println(s.maxSatisfied(c,g,3));
+//        String[] c = {"aaaa","asas","able","ability","actt","actor","access"};
+//        String[] g = {"aboveyz","abrodyz","abslute","absoryz","actresz","gaswxyz"};
+//        Solution1178 s = new Solution1178();
+//        System.out.println(s.findNumOfValidWords(c,g));
     }
 }
