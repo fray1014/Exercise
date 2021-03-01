@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.Test;
 import util.*;
@@ -795,11 +796,69 @@ public class LeetCode4 {
             return s.length();
         }
     }
+
+    class Solution896 {
+        public boolean isMonotonic(int[] A) {
+//            if(A.length<=1){
+//                return true;
+//            }
+//            int d = 0;
+//            int index = 1;
+//            while(index<A.length && A[index] == A[index - 1]){
+//                index++;
+//            }
+//            if(index<A.length){
+//                if(A[index]>A[index-1]){
+//                    d = 1;
+//                }else{
+//                    d = 0;
+//                }
+//            }
+//            index++;
+//            while(index<A.length){
+//                if(d==1&&A[index]<A[index-1]){
+//                    return false;
+//                }else if(d==0&&A[index]>A[index-1]){
+//                    return false;
+//                }
+//                index++;
+//            }
+//            return true;
+            boolean inc = true;
+            boolean dec = true;
+            for(int i=1;i<A.length;i++){
+                if(A[i]>A[i-1]){
+                    dec = false;
+                }else if(A[i]<A[i-1]){
+                    inc = false;
+                }
+                if(!(dec||inc)){
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+
+    class NumArray {
+        int[] sums;
+
+        public NumArray(int[] nums) {
+            int n = nums.length;
+            sums = new int[n + 1];
+            for (int i = 0; i < n; i++) {
+                sums[i + 1] = sums[i] + nums[i];
+            }
+        }
+
+        public int sumRange(int i, int j) {
+            return sums[j + 1] - sums[i];
+        }
+    }
     @Test
     public void test(){
-//        String[] c = {"aaaa","asas","able","ability","actt","actor","access"};
-//        String[] g = {"aboveyz","abrodyz","abslute","absoryz","actresz","gaswxyz"};
-//        Solution1178 s = new Solution1178();
-//        System.out.println(s.findNumOfValidWords(c,g));
+        Solution896 s =new Solution896();
+        int[] a = {1,1,1,1};
+        System.out.println(s.isMonotonic(a));
     }
 }
