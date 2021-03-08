@@ -534,7 +534,7 @@ public class LeetCode3 {
     public class Solution39{
         public List<List<Integer>> combinationSum(int[] candidates, int target){
             List<List<Integer>> ret=new LinkedList<>();
-            if(candidates.length<=0||candidates==null){
+            if(candidates==null||candidates.length<=0){
                 return ret;
             }
             Arrays.sort(candidates);
