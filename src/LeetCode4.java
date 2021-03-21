@@ -424,7 +424,7 @@ public class LeetCode4 {
             for(int i=0;i<26;i++){
                 while(minfre[i]!=0){
                     minfre[i]--;
-                    res.add(Character.toString('a'+i));
+                    res.add(Character.toString((char) ('a'+i)));
                 }
             }
             return res;
@@ -853,6 +853,79 @@ public class LeetCode4 {
 
         public int sumRange(int i, int j) {
             return sums[j + 1] - sums[i];
+        }
+    }
+
+    class Solution1254 {
+        public int closedIsland(int[][] grid) {
+            int rows = grid.length;
+            int cols = grid[0].length;
+            int res=  0;
+            for(int i = 1;i <rows;i++){
+                for(int j = 1;j <cols;j++){
+                    if(grid[i][j] == 0){
+                        if(dfs(grid,i,j)){
+                            res++;
+                        }
+                    }
+                }
+            }
+            return res;
+        }
+
+        private boolean dfs(int[][] grid,int i ,int j){
+            int rows = grid.length;
+            int cols = grid[0].length;
+            if(i < 0 || j < 0 || i >=rows || j >= cols){
+                return false;
+            }
+            if(grid[i][j] == 1){
+                return true;
+            }
+            grid[i][j] = 1;
+            boolean up = dfs(grid,i-1,j);
+            boolean down = dfs(grid,i+1,j);
+            boolean left = dfs(grid,i,j-1);
+            boolean right = dfs(grid,i,j+1);
+            if(up && down && left && right){
+                return true;
+            }
+            return false;
+        }
+    }
+    class Solution695 {
+        private int row;
+        private int col;
+        private int[][] grid;
+        public int maxAreaOfIsland(int[][] grid) {
+            if(grid==null){
+                return 0;
+            }
+            int res = 0;
+            this.grid = grid;
+            row = grid.length;
+            col = grid[0].length;
+            for(int i=0;i<row;i++){
+                for(int j=0;j<col;j++){
+                    if(grid[i][j]==1){
+                        res = Math.max(res,dfs(i,j));
+                    }
+                }
+            }
+            return res;
+        }
+
+        public int dfs(int x,int y){
+            if(x<0||x>=row||y<0||y>=col||grid[x][y]==0){
+                return 0;
+            }
+            int area = 1;
+            grid[x][y] = 0;
+            int up = dfs(x-1,y);
+            int down = dfs(x+1,y);
+            int left = dfs(x,y-1);
+            int right = dfs(x,y+1);
+            return area+left+right+up+down;
         }
     }
     @Test
