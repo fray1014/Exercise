@@ -427,7 +427,7 @@ public class LeetCode4 {
             for(int i=0;i<26;i++){
                 while(minfre[i]!=0){
                     minfre[i]--;
-                    res.add(Character.toString('a'+i));
+                    res.add(Character.toString((char) ('a'+i)));
                 }
             }
             return res;

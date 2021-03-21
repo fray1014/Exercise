@@ -26,8 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11862a51-1778-4495-9c25-5e56407ab7d0" name="Default Changelist" comment="update from laptop0319">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -335,10 +335,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="update from laptop0319" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608717427917">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="414" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616339776776">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="235" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.134.1536.832/0.0.1920.1160/1920.-317.1080.1880@0.0.1920.1160" timestamp="1608717427917" />
+    <state x="414" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616339776776" />
     <state x="276" y="244" key="FileChooserDialogImpl" timestamp="1616291481769">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -396,10 +397,11 @@
     <state width="1877" height="327" key="GridCell.Tab.1.right/-1920.134.1536.832/0.0.1920.1160/1920.-317.1080.1880@-1920.134.1536.832" timestamp="1615276435641" />
     <state width="1877" height="327" key="GridCell.Tab.1.right/-1920.134.1536.832/0.0.1920.1160/1920.-317.1080.1880@0.0.1920.1160" timestamp="1615620071929" />
     <state width="1877" height="327" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615622040664" />
-    <state x="440" y="0" key="SettingsEditor" timestamp="1608717484244">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="440" y="0" key="SettingsEditor" timestamp="1616339812471">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="0" key="SettingsEditor/-1920.134.1536.832/0.0.1920.1160/1920.-317.1080.1880@0.0.1920.1160" timestamp="1608717484244" />
+    <state x="440" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1616339812471" />
     <state x="451" y="204" key="Vcs.Push.Dialog.v2" timestamp="1616123208448">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
