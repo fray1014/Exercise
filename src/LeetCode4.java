@@ -1,4 +1,7 @@
 import java.util.*;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -424,7 +427,7 @@ public class LeetCode4 {
             for(int i=0;i<26;i++){
                 while(minfre[i]!=0){
                     minfre[i]--;
-                    res.add(Character.toString((char) ('a'+i)));
+                    res.add(Character.toString('a'+i));
                 }
             }
             return res;
@@ -928,10 +931,27 @@ public class LeetCode4 {
             return area+left+right+up+down;
         }
     }
+
+    class Solution1047 {
+        public String removeDuplicates(String S) {
+            StringBuffer stack = new StringBuffer();
+            int top = -1;
+            for(int i=0;i<S.length();i++){
+                char c = S.charAt(i);
+                if(top>=0&&c==stack.charAt(top)){
+                    stack.deleteCharAt(top);
+                    --top;
+                }else{
+                    stack.append(c);
+                    ++top;
+                }
+            }
+            return stack.toString();
+        }
+    }
     @Test
     public void test(){
-        Solution896 s =new Solution896();
-        int[] a = {1,1,1,1};
-        System.out.println(s.isMonotonic(a));
+        System.out.println();
+        System.out.println((int)'1');
     }
 }

@@ -96,13 +96,23 @@ public class BinaryTree {
     public void levelOrderTraverse(TreeNode root){
         Queue<TreeNode> queue=new LinkedList<>();
         queue.offer(root);
+        int rec = 1;
         while(!queue.isEmpty()){
-            TreeNode cur=queue.poll();
-            System.out.println(cur.val);
-            if(cur.left!=null)
-                queue.offer(cur.left);
-            if(cur.right!=null)
-                queue.offer(cur.right);
+            int rec2 = rec;
+            rec = 0 ;
+            for(int i=0;i<rec2;i++){
+                TreeNode cur=queue.poll();
+                System.out.println(cur.val);
+                if(cur.left!=null){
+                    queue.offer(cur.left);
+                    rec++;
+                }
+                if(cur.right!=null){
+                    queue.offer(cur.right);
+                    rec++;
+                }
+            }
+            System.out.println("/");
         }
     }
     /**给中序后序，还原二叉树*/
