@@ -129,6 +129,46 @@ public class LeetCode5 {
             dfs(grid,x,y+1,row,col);
         }
     }
+    class Solution1482 {
+        public int minDays(int[] bloomDay, int m, int k) {
+            //二分查找
+            if(m*k>bloomDay.length){
+                return -1;
+            }
+            int low = Integer.MAX_VALUE;
+            int high = 0;
+            for(int n : bloomDay){
+                low = Math.min(low,n);
+                high = Math.max(high,n);
+            }
+            while (low < high){
+                int days = (high - low)/2 + low;
+                if(canMake(bloomDay,m,k,days)){
+                    high = days;
+                }else{
+                    low = days + 1;
+                }
+            }
+            return low;
+        }
+
+        public boolean canMake(int[] bloomDay, int m, int k, int days){
+            int cnt = 0;
+            int flowers = 0;
+            for(int i = 0; i < bloomDay.length && cnt < m; i++){
+                if(bloomDay[i]<=days){
+                    flowers++;
+                    if(flowers==k){
+                        cnt++;
+                        flowers=0;
+                    }
+                }else{
+                    flowers=0;
+                }
+            }
+            return cnt>=m;
+        }
+    }
 
     class Solution78 {
         List<Integer> t = new ArrayList<Integer>();
