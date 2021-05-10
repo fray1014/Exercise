@@ -7,7 +7,9 @@ import java.util.*;
 public class LeetCode5 {
     @Test
     public void test(){
-
+        Solution78 s = new Solution78();
+        int[] arr = {1,2,3,4};
+        s.subsets(arr);
     }
     public class Solution224{
         public int calculate(String s) {
@@ -125,6 +127,31 @@ public class LeetCode5 {
             dfs(grid,x-1,y,row,col);
             dfs(grid,x,y-1,row,col);
             dfs(grid,x,y+1,row,col);
+        }
+    }
+
+    class Solution78 {
+        List<Integer> t = new ArrayList<Integer>();
+        List<List<Integer>> ans = new ArrayList<List<Integer>>();
+
+        public List<List<Integer>> subsets(int[] nums) {
+            dfs(0, nums);
+            return ans;
+        }
+
+        public void dfs(int cur, int[] nums) {
+            if (cur == nums.length) {
+                ans.add(new ArrayList<Integer>(t));
+                for(int tmp:t){
+                    System.out.print(tmp);
+                }
+                System.out.println();
+                return;
+            }
+            t.add(nums[cur]);
+            dfs(cur + 1, nums);
+            t.remove(t.size() - 1);
+            dfs(cur + 1, nums);
         }
     }
 }
