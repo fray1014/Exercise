@@ -8,8 +8,19 @@ public class LeetCode5 {
     @Test
     public void test(){
         Solution78 s = new Solution78();
-        int[] arr = {1,2,3,4};
-        s.subsets(arr);
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+        Integer d = 3;
+        Integer e = 321;
+        Integer f = 321;
+        Long g = 3L;
+//        System.out.println(c == d);
+//        System.out.println(e == f);
+//        System.out.println(c == (a + b));
+//        System.out.println(c.equals(a + b));
+        System.out.println(g == (a + b));
+//        System.out.println(g.equals(a + b));
     }
     public class Solution224{
         public int calculate(String s) {
@@ -192,6 +203,8 @@ public class LeetCode5 {
             dfs(cur + 1, nums);
             t.remove(t.size() - 1);
             dfs(cur + 1, nums);
+
         }
     }
+
 }
